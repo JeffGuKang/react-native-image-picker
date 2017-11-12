@@ -181,7 +181,7 @@ RCT_EXPORT_METHOD(showImagePicker:(NSDictionary *)options callback:(RCTResponseS
     if ([[self.options objectForKey:@"allowsEditing"] boolValue]) {
         self.picker.allowsEditing = true;
     }
-    self.picker.modalPresentationStyle = UIModalPresentationCurrentContext;
+    self.picker.modalPresentationStyle = UIModalPresentationOverFullScreen;
     self.picker.delegate = self;
 
     // Check permissions
